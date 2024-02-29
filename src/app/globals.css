@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  scroll-behavior: smooth;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Navbar Component */
+.nav {
+  /* padding-top: 5px;
+  padding-bottom: 5px; */
+  transition: all 0.5s;
+  z-index: 997;
+  background: transparent;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .nav {
+    background: #fcd733;
+  }
+}
+
+.nav.active {
+  background: #fff;
+}
+
+.fixedTop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+}

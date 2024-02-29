@@ -1,0 +1,43 @@
+/* #nav.header-scrolled{ */
+/* background-color: #fff; */
+/* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
+/* } */
+
+.nav {
+    /* padding-top: 5px;
+      padding-bottom: 5px; */
+      position: relative;
+    transition: all 0.5s;
+    z-index: 200;
+  
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  
+  
+  
+  .fixedTop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 930;
+  }
+  
+  @media (maxwidth: 400px) {
+    .hidden {
+      display: none;
+    }
+    .hidden a {
+      display: block;
+    }
+  }
+  
+  .mobile-menu {
+    background-color: #fff;
+    position: absolute;
+    width: 90%;
+  }
